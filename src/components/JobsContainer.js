@@ -10,7 +10,11 @@ class JobsContainer extends Component {
 
   render() {
     const renderSearchCount = (
-      <div className="job-count">{this.props.count} jobs found</div>
+      <div className="job-count">
+        {this.props.count > 1
+          ? this.props.count + " jobs found"
+          : this.props.count + " job found"}
+      </div>
     );
     const renderJobsTitle = this.props.jobs.map((job, index) => (
       <JobCard key={index} job={job} />
