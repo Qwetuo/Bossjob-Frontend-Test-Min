@@ -49,7 +49,7 @@
 }
 
 .job-icon {
-  color: rgba(0, 60, 255, 0.425);
+  color: #3b88ec;
   width: 1em;
   height: 1em;
   margin: 0 5px;
@@ -96,4 +96,21 @@
   grid-row: 4;
   text-align: right;
   margin: auto;
+}
+
+.search-container {
+  background: #f9f9f9;
+  padding: 2em;
+}
+
+.search-container input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 2em;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 1em;
+  color: #3b88ec;
+  text-align: center;
 }

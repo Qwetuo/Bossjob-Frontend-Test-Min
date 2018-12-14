@@ -15,6 +15,11 @@ const reducer = (state = initialState, action) => {
         count: action.count,
         loading: false
       };
+    case "CHANGE_QUERY":
+      return {
+        ...state,
+        query: action.query
+      };
     default:
       return state;
   }
