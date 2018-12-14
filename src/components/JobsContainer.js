@@ -12,7 +12,9 @@ class JobsContainer extends Component {
     const renderSearchCount = (
       <div className="job-count">{this.props.count} jobs found</div>
     );
-    const renderJobsTitle = this.props.jobs.map(job => <JobCard job={job} />);
+    const renderJobsTitle = this.props.jobs.map((job, index) => (
+      <JobCard key={index} job={job} />
+    ));
     return this.props.loading ? (
       <div>Loading</div>
     ) : (

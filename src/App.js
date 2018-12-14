@@ -11,9 +11,7 @@ class App extends Component {
         <div className="App-Wrapper">
           <Header />
           <div style={{padding: '10px 20px'}}>
-            <p>
               <JobsContainer />
-            </p>
           </div>
         </div>
       </div>

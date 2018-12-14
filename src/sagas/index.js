@@ -8,7 +8,6 @@ function* fetchJobs() {
   const json = yield fetch(
     `https://search.bossjob.com/api/v1/search/job_filter?size=12&query=${query}`
   ).then(response => response.json());
-  console.log(json)
   yield put({ type: "JOBS_RECEIVED", jobs: json.data.jobs, count: json.data.total_num });
 
 }

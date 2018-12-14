@@ -51,16 +51,16 @@ const JobCard = ({
       <div className="salary-range">{getSalaryRange()}</div>
       <div className="job-details">
         <div className="location">
-          <span class="fas fa-map-marker-alt job-icon" /> {company_location}
+          <span className="fas fa-map-marker-alt job-icon" /> {company_location}
         </div>
         <div className="experience">
-          <span class="fas fa-briefcase job-icon" /> {xp_lvl}
+          <span className="fas fa-briefcase job-icon" /> {xp_lvl}
         </div>
         <div className="degree">
-          <span class="fas fa-graduation-cap job-icon" /> {degree}{" "}
+          <span className="fas fa-graduation-cap job-icon" /> {degree}{" "}
         </div>
         <div className="type">
-          <span class="fas fa-clock job-icon" /> {job_type}
+          <span className="fas fa-clock job-icon" /> {job_type}
         </div>
       </div>
       <div className="company-details">
