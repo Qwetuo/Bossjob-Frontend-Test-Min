@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FilterButton from "./FilterButton";
 import { connect } from "react-redux";
 import { changeQuery, getJobs } from "../actions";
 
@@ -37,6 +38,10 @@ class SearchContainer extends Component {
     this.props.getJobs();
   };
 
+  handleFilterClick = () => {
+    alert("Currently no functionality added");
+  };
+
   render() {
     return (
       <div className="search-container">
@@ -53,6 +58,7 @@ class SearchContainer extends Component {
             onKeyDown={this.handleKeyDown}
           />
         </div>
+        <FilterButton handleFilterClick={this.handleFilterClick} />
       </div>
     );
   }
