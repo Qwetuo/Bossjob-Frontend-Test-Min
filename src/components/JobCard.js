@@ -23,10 +23,10 @@ const JobCard = ({
       const toDiff = toStr.length - 3;
       return (
         currency +
-        fromStr.slice(0, fromDiff - 1) +
+        fromStr.slice(0, fromDiff) +
         "k - " +
         currency +
-        toStr.slice(0, toDiff - 1) +
+        toStr.slice(0, toDiff) +
         "k"
       );
     }
