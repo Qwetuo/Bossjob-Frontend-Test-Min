@@ -9,11 +9,18 @@
   min-height: 700px;
 }
 
+.job-count {
+  border-bottom: 1px solid lightgray;
+  margin: 1em;
+  padding-bottom: 1em;
+  font-weight: 600;
+}
+
 .job-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0.8em;
-  padding: 0.8em;
+  margin: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid lightgray;
 }
 

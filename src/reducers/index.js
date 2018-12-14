@@ -1,6 +1,7 @@
 const initialState = {
   query: "",
-  jobs: []
+  jobs: [],
+  count: "0"
 };
 
 const reducer = (state = initialState, action) => {
@@ -8,7 +9,12 @@ const reducer = (state = initialState, action) => {
     case "GET_JOBS":
       return { ...state, loading: true };
     case "JOBS_RECEIVED":
-      return { ...state, jobs: action.json, loading: false };
+      return {
+        ...state,
+        jobs: action.jobs,
+        count: action.count,
+        loading: false
+      };
     default:
       return state;
   }

@@ -9,14 +9,24 @@ class JobsContainer extends Component {
   }
 
   render() {
+    const renderSearchCount = (
+      <div className="job-count">{this.props.count} jobs found</div>
+    );
     const renderJobsTitle = this.props.jobs.map(job => <JobCard job={job} />);
-    return this.props.loading ? <div>Loading</div> : renderJobsTitle;
+    return this.props.loading ? (
+      <div>Loading</div>
+    ) : (
+      <div>
+        {renderSearchCount} {renderJobsTitle}
+      </div>
+    );
   }
 }
 
 const mapStateToProps = state => ({
   jobs: state.jobs,
-  loading: state.loading
+  loading: state.loading,
+  count: state.count
 });
 
 const mapDispatchToProps = {
